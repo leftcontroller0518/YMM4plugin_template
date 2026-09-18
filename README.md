@@ -1,0 +1,2 @@
+# YMM4plugin_template
+左コントローラー式YMM4プラグインのテンプレ
