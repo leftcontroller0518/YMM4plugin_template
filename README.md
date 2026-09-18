@@ -64,21 +64,20 @@ plugin/
 2026/09/??
 - 公開
 
-【予定しているアップデート】
+#### 【予定しているアップデート】
 - 多言語対応
 - 立ち絵プラグインサンプルの作成
 - サンプル使用例の同梱
 
-**収録ファイル**
-
-``Video_Effect/Nomal``
-``Video_Effect/HLSL``
-``Audio_Effect``
-``Audio_Spectrum``
-``Video_Writer``
-``Shape``
-``Timeline``
-``Tool``
-``Setting``
-``harmony/Easing``
-``harmony/DrawMethodHook``
+#### 収録ファイル
+- ``Video_Effect/Nomal``
+- ``Video_Effect/HLSL``
+- ``Audio_Effect``
+- ``Audio_Spectrum``
+- ``Video_Writer``
+- ``Shape``
+- ``Timeline``
+- ``Tool``
+- ``Setting``
+- ``harmony/Easing``
+- ``harmony/DrawMethodHook``
