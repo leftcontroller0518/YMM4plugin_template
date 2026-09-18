@@ -34,7 +34,6 @@ MITライセンスを採用しているためライセンスの許容範囲内�
 |``harmony/Easing``|harmonyライブラリを使用してイージングを拡張|
 |``harmony/DrawMethodHook``|harmonyライブラリを使用して描画メソッドをフック|
 
-
 ## ファイル構成
 ほとんどのフォルダ内のファイル構成は以下のようになっています。
 
@@ -71,16 +70,14 @@ plugin/
 - サンプル使用例の同梱
 
 **収録ファイル**
-|フォルダ|できること|
-|-|-|
-|``Video_Effect/Nomal``|映像エフェクト|
-|``Video_Effect/HLSL``|HLSLを使用した映像エフェクト|
-|``Audio_Effect``|音声エフェクト|
-|``Audio_Spectrum``|波形|
-|``Video_Writer``|動画出力|
-|``Shape``|図形を追加|
-|``Timeline``|タイムライン操作|
-|``Tool``|ツールタブ関連|
-|``Setting``|設定に項目を追加|
-|``harmony/Easing``|harmonyライブラリを使用してイージングを拡張|
-|``harmony/DrawMethodHook``|harmonyライブラリを使用して描画メソッドをフック|
+- ``Video_Effect/Nomal``
+- ``Video_Effect/HLSL``
+- ``Audio_Effect``
+- ``Audio_Spectrum``
+- ``Video_Writer``
+- ``Shape``
+- ``Timeline``
+- ``Tool``
+- ``Setting``
+- ``harmony/Easing``
+- ``harmony/DrawMethodHook``
