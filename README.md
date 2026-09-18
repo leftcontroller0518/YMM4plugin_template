@@ -28,6 +28,7 @@ MITライセンスを採用しているためライセンスの許容範囲内�
 |``setting``|設定に項目を追加|
 |``harmony/easing``|harmonyライブラリを使用してイージングを拡張|
 |``harmony/coloepicker``|harmonyライブラリを使用してカラーピッカーを拡張|
+|``harmony/``||
 
 5. コードを自由に編集する。
 
