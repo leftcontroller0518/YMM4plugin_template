@@ -17,18 +17,17 @@ MITライセンスを採用しているためライセンスの許容範囲内�
 **対応表**
 |フォルダ|できること|
 |-|-|
-|``video_effect/nomal``|映像エフェクト|
-|``video_effect/HLSL_video_effect``|HLSLを使用した映像エフェクト|
-|``audio_effect``|音声エフェクト|
-|``audio_spectrum``|波形|
-|``video_writer``|動画出力|
-|``shape``|図形を追加|
-|``timeline``|タイムライン操作|
-|``tool``|ツールタブ関連|
-|``setting``|設定に項目を追加|
-|``harmony/easing``|harmonyライブラリを使用してイージングを拡張|
-|``harmony/coloepicker``|harmonyライブラリを使用してカラーピッカーを拡張|
-|``harmony/``||
+|``Video_Effect/Nomal``|映像エフェクト|
+|``Video_Effect/HLSL``|HLSLを使用した映像エフェクト|
+|``Audio_Effect``|音声エフェクト|
+|``Audio_Spectrum``|波形|
+|``Video_Writer``|動画出力|
+|``Shape``|図形を追加|
+|``Timeline``|タイムライン操作|
+|``Tool``|ツールタブ関連|
+|``Setting``|設定に項目を追加|
+|``harmony/Easing``|harmonyライブラリを使用してイージングを拡張|
+|``harmony/DrawMethodHook``|harmonyライブラリを使用して描画メソッドをフック|
 
 5. コードを自由に編集する。
 
