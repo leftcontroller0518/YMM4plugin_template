@@ -21,5 +21,5 @@ MITライセンスを採用しているためライセンスの許容範囲内�
 |``timeline``|タイムラインにアイテムを追加、タイムラインのアイテムを取得|
 |``tool``|ツールタブに項目を追加してウィンドウを呼び出し|
 |``settings``|設定に項目を追加|
-|``harmony_easing``|harmonyライブラリを使用して|
-|````||
+|``harmony/easing``|harmonyライブラリを使用してイージングを拡張|
+|``harmony/coloepicker``|harmonyライブラリを使用してカラーピッカーを拡張|
