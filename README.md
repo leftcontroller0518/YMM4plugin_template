@@ -17,9 +17,13 @@ MITライセンスを採用しているためライセンスの許容範囲内�
 |-|-|
 |``video_effect/nomal``|映像エフェクト|
 |``video_effect/HLSL_video_effect``|HLSLを使用した映像エフェクト|
+|``audio_effect``|音声エフェクト|
+|``audio_spectrum``|波形|
+|``video_writer``|動画出力|
 |``shape``|図形を追加|
 |``timeline``|タイムラインにアイテムを追加、タイムラインのアイテムを取得|
 |``tool``|ツールタブに項目を追加してウィンドウを呼び出し|
-|``settings``|設定に項目を追加|
+|``setting``|設定に項目を追加|
 |``harmony/easing``|harmonyライブラリを使用してイージングを拡張|
 |``harmony/coloepicker``|harmonyライブラリを使用してカラーピッカーを拡張|
+|````||
