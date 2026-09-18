@@ -28,7 +28,7 @@ MITライセンスを採用しているためライセンスの許容範囲内�
 |``Audio_Spectrum``|波形|
 |``Video_Writer``|動画出力|
 |``Shape``|図形を追加|
-|``Timeline``|タイムライン操作|
+|``Timeline|タイムライン操作|
 |``Tool``|ツールタブ関連|
 |``Setting``|設定に項目を追加|
 |``harmony/Easing``|harmonyライブラリを使用してイージングを拡張|
@@ -70,14 +70,15 @@ plugin/
 - サンプル使用例の同梱
 
 **収録ファイル**
-- ``Video_Effect/Nomal``
-- ``Video_Effect/HLSL``
-- ``Audio_Effect``
-- ``Audio_Spectrum``
-- ``Video_Writer``
-- ``Shape``
-- ``Timeline``
-- ``Tool``
-- ``Setting``
-- ``harmony/Easing``
-- ``harmony/DrawMethodHook``
+
+``Video_Effect/Nomal``
+``Video_Effect/HLSL``
+``Audio_Effect``
+``Audio_Spectrum``
+``Video_Writer``
+``Shape``
+``Timeline``
+``Tool``
+``Setting``
+``harmony/Easing``
+``harmony/DrawMethodHook``
