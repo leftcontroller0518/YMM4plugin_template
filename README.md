@@ -9,7 +9,7 @@
 MITライセンスを採用しているためライセンスの許容範囲内でならご自由にお使いいただけます。
 
 ## 使い方
-1. releaseから[最新のリリース](https://github.com/leftcontroller0518/YMM4_FontChanger/releases/latest)にアクセス
+1. releaseから[最新のリリース](https://github.com/leftcontroller0518/YMM4plugin_template/releases/latest)にアクセス
 2. 「ymm4plugin_template.zip」をダウンロード
 3. ダウンロードしたzipファイルを展開
 4. フォルダ分けされているため、使いたいテンプレートに対応するフォルダをコピーする。
