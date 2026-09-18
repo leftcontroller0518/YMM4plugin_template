@@ -60,5 +60,21 @@ plugin/
 - 制作にはClaude、ChatGPT、GeminiなどのAIを使用しています。予めご了承ください。
 - すべてのコードは、アップデート時に毎回Windows11環境でビルド成功およびYMM4側での動作を検証済みのため、安心してご使用ください。
 
-### 更新履歴
-XXXX/YY/ZZ(あとでにゅうりょくするううう) v1.0.0 公開
+## 更新履歴
+### 2026/09/?? v1.0.0
+- 公開
+
+**収録ファイル**
+|フォルダ|できること|
+|-|-|
+|``Video_Effect/Nomal``|映像エフェクト|
+|``Video_Effect/HLSL``|HLSLを使用した映像エフェクト|
+|``Audio_Effect``|音声エフェクト|
+|``Audio_Spectrum``|波形|
+|``Video_Writer``|動画出力|
+|``Shape``|図形を追加|
+|``Timeline``|タイムライン操作|
+|``Tool``|ツールタブ関連|
+|``Setting``|設定に項目を追加|
+|``harmony/Easing``|harmonyライブラリを使用してイージングを拡張|
+|``harmony/DrawMethodHook``|harmonyライブラリを使用して描画メソッドをフック|
