@@ -33,16 +33,17 @@ MITライセンスを採用しているためライセンスの許容範囲内�
 ほとんどのフォルダ内のファイル構成は以下のようになっています。
 ```
 plugin/
-├── plugin.sln              …ソリューションファイル
-├── plugin/                 …プラグインのプロジェクトフォルダ
-│   ├── plugin.csproj       …プロジェクトファイル
-│   ├── pluginMain.cs       …プラグインのメイン処理・エントリポイント
-│   ├── pluginParameter.cs  …エフェクトなどのパラメータ・設定用クラス
-│   ├── Shaders/            …（映像エフェクトなどの場合）HLSLシェーダーファイル
+├── plugin.sln                   …ソリューションファイル
+├── plugin/                      …プラグインのプロジェクトフォルダ
+│   ├── plugin.csproj            …プロジェクトファイル
+│   ├── pluginMain.cs            …プラグインのメイン処理・エントリポイント
+│   ├── pluginParameter.cs       …エフェクトなどのパラメータ・設定用クラス
+│   ├── Shaders/                 …（映像エフェクトなどの場合）HLSLシェーダーファイル
 │   │   └── Effect.hlsl
-│   └── Properties/         …VisualStudioなどのアセンブリ情報など
-├── Directory.Build.props   …YMM4のインストールパスを指定する設定ファイル
-└── README.md               …説明書・ドキュメント
+│   └── Properties/              …アセンブリ情報など
+|       └── LaunchSetting.json
+├── Directory.Build.props        …YMM4のインストールパスを指定する設定ファイル
+└── README.md                    …説明書・ドキュメント
 ```
 不明な点などがあれば対象フォルダのREADME.mdをご参照ください。
 
