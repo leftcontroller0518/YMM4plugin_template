@@ -1,7 +1,7 @@
 # YMM4plugin_template
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](#)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://www.npmjs.com/package/harmony)
-[![.NET](https://img.shields.io/badge/.NET-10.0-blue.svg)](#)
+[![.NET](https://img.shields.io/badge/.NET-10.0-yellow.svg)](#)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://www.npmjs.com/package/harmony)
 [![Downloads](https://img.shields.io/github/downloads/leftcontroller0518/YMM4plugin_template/total)](https://github.com/leftcontroller0518/YMM4plugin_template/releases/latest)
 
 ## 概要
