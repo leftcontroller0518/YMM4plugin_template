@@ -1,5 +1,6 @@
 # YMM4plugin_template
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](#)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://www.npmjs.com/package/harmony)
 [![.NET](https://img.shields.io/badge/.NET-10.0-blue.svg)](#)
 [![Downloads](https://img.shields.io/github/downloads/leftcontroller0518/YMM4plugin_template/total)](https://github.com/leftcontroller0518/YMM4plugin_template/releases/latest)
 
@@ -65,24 +66,11 @@ plugin/
 - すべてのコードは、アップデート時に毎回Windows11環境でビルド成功およびYMM4側での動作を検証済みのため、安心してご使用ください。
 
 ## 更新履歴
-### v1.0.0
-2026/09/??
-- 公開
+|日時|ver|内容|修正|
+|-|-|-|-|
+|2026/09/??|v1.0.0|公開|-|
 
-#### 【予定しているアップデート】
+### 【予定しているアップデート】
 - 多言語対応
 - 立ち絵プラグインサンプルの作成
 - サンプル使用例の同梱
-
-#### 収録ファイル
-- ``Video_Effect/Nomal``
-- ``Video_Effect/HLSL``
-- ``Audio_Effect``
-- ``Audio_Spectrum``
-- ``Video_Writer``
-- ``Shape``
-- ``Timeline``
-- ``Tool``
-- ``Setting``
-- ``harmony/Easing``
-- ``harmony/DrawMethodHook``
