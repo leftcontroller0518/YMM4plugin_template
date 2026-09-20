@@ -1,52 +1,81 @@
-# ゆっくりMovieMaker4 (YMM4) プラグイン開発テンプレート集
+# YMM4plugin_template
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](#)
+[![GeForce](https://img.shields.io/badge/GeForce-4090-green.svg)](#)
+[![.NET](https://img.shields.io/badge/.NET-10.0-blue.svg)](#)
+[![C#](https://shields.io/badge/lang-CSharp-blue.svg)](#)
+[![Downloads](https://img.shields.io/github/downloads/leftcontroller0518/YMM4plugin_template/total)](https://github.com/leftcontroller0518/YMM4plugin_template/releases/latest)
 
-ゆっくりMovieMaker4 (YMM4) プラグイン開発用の汎用テンプレートリポジトリです。  
-対応する全11種類のプラグイン種別ごとに独立したフォルダ・ソリューションで構成されており、Visual Studio ですぐに開いて開発・ビルド・デバッグが可能です。
+## 概要
+当リポジトリは私左コントローラーが作成したYMM4プラグインのテンプレートです。
 
----
+MITライセンスを採用しているためライセンスの許容範囲内でならご自由にお使いいただけます。
 
-## 収録テンプレート一覧
+> [!warning]
+> 本リポジトリはC#に関する知識をお持ちの方を対象としています。
 
-| 種類 | フォルダ | 説明 |
-| :--- | :--- | :--- |
-| **Video_Effect/Normal** | [`Video_Effect/Normal`](file:///d:/YMM4plugins/YMM4plugin_template/Video_Effect/Normal) | 標準映像エフェクト (Direct2D1 ColorMatrix 不透明度調整) |
-| **Video_Effect/HLSL** | [`Video_Effect/HLSL`](file:///d:/YMM4plugins/YMM4plugin_template/Video_Effect/HLSL) | Direct2D1 カスタムピクセルシェーダー (HLSL色反転 & 自動コンパイル) |
-| **Audio_Effect** | [`Audio_Effect`](file:///d:/YMM4plugins/YMM4plugin_template/Audio_Effect) | 音声エフェクト (音量ゲイン調整 & DSPサンプル処理) |
-| **Audio_Spectrum** | [`Audio_Spectrum`](file:///d:/YMM4plugins/YMM4plugin_template/Audio_Spectrum) | 音声波形表示 (周波数スペクトル配列のDirect2Dバー描画) |
-| **Video_Writer** | [`Video_Writer`](file:///d:/YMM4plugins/YMM4plugin_template/Video_Writer) | 動画出力 (生ピクセルRGBAバイト列 & 音声PCM出力) |
-| **Shape** | [`Shape`](file:///d:/YMM4plugins/YMM4plugin_template/Shape) | 図形アイテム (Direct2D1 パスジオメトリによる星型描画) |
-| **Timeline** | [`Timeline`](file:///d:/YMM4plugins/YMM4plugin_template/Timeline) | タイムライン操作 (アイテム一覧、選択中アイテム、フレーム情報取得) |
-| **Tool** | [`Tool`](file:///d:/YMM4plugins/YMM4plugin_template/Tool) | 汎用ツールタブ (WPF UI & 状態の自動保存/復元) |
-| **Setting** | [`Setting`](file:///d:/YMM4plugins/YMM4plugin_template/Setting) | 設定画面 (設定タブ追加 & JSON自動永続化) |
-| **harmony/Easing** | [`harmony/Easing`](file:///d:/YMM4plugins/YMM4plugin_template/harmony/Easing) | Harmonyによるイージング計算フック (`Easing.GetValue`) |
-| **harmony/DrawMethodHook** | [`harmony/DrawMethodHook`](file:///d:/YMM4plugins/YMM4plugin_template/harmony/DrawMethodHook) | Harmonyによる描画メソッドフック (`EffectedItemSource.Update`) |
+## 使い方
+1. releaseから[最新のリリース](https://github.com/leftcontroller0518/YMM4plugin_template/releases/latest)にアクセス
+2. 「ymm4plugin_template.zip」をダウンロード
+3. ダウンロードしたzipファイルを展開
+4. フォルダ分けされているため、使いたいテンプレートに対応するフォルダをコピーする。
+5. コードを自由に編集する。
+> [!tip]
+> フォルダごとの対応表は[こちら](#対応表)を、
+> 
+> ファイル構成は[こちら](#ファイル構成)をご参照ください。
 
----
+## 対応表
+|フォルダ|できること|
+|-|-|
+|``Video_Effect/Nomal``|映像エフェクト|
+|``Video_Effect/HLSL``|HLSLを使用した映像エフェクト|
+|``Audio_Effect``|音声エフェクト|
+|``Audio_Spectrum``|波形|
+|``Video_Writer``|動画出力|
+|``Shape``|図形を追加|
+|``Timeline|タイムライン操作|
+|``Tool``|ツールタブ関連|
+|``Setting``|設定に項目を追加|
+|``harmony/Easing``|harmonyライブラリを使用してイージングを拡張|
+|``harmony/DrawMethodHook``|harmonyライブラリを使用して描画メソッドをフック|
 
-## 全テンプレート共通の仕様
+## ファイル構成
+ほとんどのフォルダ内のファイル構成は以下のようになっています。
 
-### 1. 共通設定ファイル (`Directory.Build.props`)
-各テンプレートフォルダ内およびルートに `Directory.Build.props` を配置しています。
-```xml
-<Project>
-  <PropertyGroup>
-    <YMM4DirPath>C:\YMM4\</YMM4DirPath>
-  </PropertyGroup>
-</Project>
+例外はありますがほとんどがこの形です。
+
+また、先述の通り本リポジトリはC#に関する知識をお持ちの方を対象としています。予めご了承ください。
 ```
-開発の際には、「C:\YMM4\」を皆様の環境の実際のYMM4フォルダパスに書き換えてください。
+plugin/
+├── plugin.sln                   …ソリューションファイル
+├── plugin/                      …プラグインのプロジェクトフォルダ
+│   ├── plugin.csproj            …プロジェクトファイル
+│   ├── pluginMain.cs            …プラグインのメイン処理・エントリポイント
+│   ├── pluginParameter.cs       …エフェクトなどのパラメータ・設定用クラス
+│   ├── Shaders/                 …（映像エフェクトなどの場合）HLSLシェーダーファイル
+│   │   └── Effect.hlsl
+│   └── Properties/              …アセンブリ情報など
+|       └── LaunchSetting.json
+├── Directory.Build.props        …YMM4のインストールパスを指定する設定ファイル
+└── README.md                    …説明書・ドキュメント
+```
+フォルダ内のファイルやコードで不明な点などがあれば対象フォルダのREADME.mdをご参照ください。
 
-### 2. デバッグ実行 (`launchSettings.json`)
-各プロジェクトの `Properties/launchSettings.json` に F5 デバッグ設定が含まれています。
-Visual Studio で `F5` キーを押すと、自動的にビルド → プラグインフォルダへ DLL コピー → YMM4 の起動まで一気に行われます。
+## ライセンス
+このプロジェクトは [MIT License](LICENSE) の下で公開されています。
 
-### 3. HLSL シェーダーの自動コンパイル
-`Video_Effect/HLSL` では、Windows SDK の `fxc.exe` を使ってビルド前に `Shaders/Effect.hlsl` を `Shaders/Effect.cso` へ自動コンパイルし、DLL 内に埋め込みリソースとして自動同梱します。
+## コードについて
+- 制作にはClaude、ChatGPT、GeminiなどのAIを使用しています。予めご了承ください。
+- すべてのコードは、アップデート時に毎回Windows11環境でビルド成功およびYMM4側での動作を検証済みのため、安心してご使用ください。
+- Issues、PRも大歓迎です。
+- 本リポジトリは[Harmonyライブラリ](https://github.com/pardeike/harmony)を使用しています。
 
----
+## 更新履歴
+|日時|ver|内容|修正|
+|-|-|-|-|
+|2026/09/??|v1.0.0|公開|-|
 
-## 使い方・始め方
-1. 開発したい種別のフォルダ（例: `Video_Effect/Normal`）を開きます。
-2. ソリューションファイル（例: `SampleVideoEffectNormal.sln`）を Visual Studio で開きます。
-3. `F5` キーを押してビルド＆デバッグ起動します。
-4. YMM4 上で作成したプラグインの動作を確認しながらコードを変更できます。
+### 【予定しているアップデート】
+- 多言語対応
+- 立ち絵プラグインサンプルの作成
+- サンプル使用例の同梱
