@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "YukkuriMovieMaker4": {
+      "commandName": "Executable",
+      "executablePath": "C:\\YMM4\\YukkuriMovieMaker.exe",
+      "workingDirectory": "C:\\YMM4"
+    },
+    "プロファイル 1": {
+      "commandName": "Executable"
+    }
+  }
+}

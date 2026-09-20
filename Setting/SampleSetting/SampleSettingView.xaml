@@ -1,0 +1,24 @@
+<UserControl x:Class="SampleSetting.SampleSettingView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="250" d:DesignWidth="400">
+    <Grid Margin="16">
+        <StackPanel>
+            <TextBlock Text="サンプルプラグイン設定" FontWeight="Bold" FontSize="16" Margin="0,0,0,16"/>
+
+            <!-- APIキー -->
+            <TextBlock Text="APIキー:" FontWeight="SemiBold" Margin="0,0,0,4"/>
+            <TextBox Text="{Binding ApiKey, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,16"/>
+
+            <!-- チェックボックス -->
+            <CheckBox Content="カスタム機能を有効化する" IsChecked="{Binding EnableCustomFeature}" Margin="0,0,0,16"/>
+
+            <!-- 数値設定 -->
+            <TextBlock Text="タイムアウト時間 (秒):" FontWeight="SemiBold" Margin="0,0,0,4"/>
+            <TextBox Text="{Binding TimeoutSeconds, UpdateSourceTrigger=PropertyChanged}" Width="100" HorizontalAlignment="Left" Margin="0,0,0,16"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
