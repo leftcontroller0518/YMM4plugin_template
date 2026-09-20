@@ -1,5 +1,6 @@
 # YMM4plugin_template
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#)
+[![GeForce](https://img.shields.io/badge/GeForce-4090-green.svg)](#)
 [![.NET](https://img.shields.io/badge/.NET-10.0-blue.svg)](#)
 [![C#](https://shields.io/badge/lang-CSharp-blue.svg)](#)
 [![Downloads](https://img.shields.io/github/downloads/leftcontroller0518/YMM4plugin_template/total)](https://github.com/leftcontroller0518/YMM4plugin_template/releases/latest)
