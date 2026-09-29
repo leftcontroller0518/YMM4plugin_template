@@ -32,7 +32,7 @@ MITライセンスを採用しているためライセンスの許容範囲内�
 |``Audio_Spectrum``|波形|
 |``Video_Writer``|動画出力|
 |``Shape``|図形を追加|
-|``Timeline|タイムライン操作|
+|``Timeline``|タイムライン操作|
 |``Tool``|ツールタブ関連|
 |``Setting``|設定に項目を追加|
 |``harmony/Easing``|harmonyライブラリを使用してイージングを拡張|
